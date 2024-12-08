@@ -9,4 +9,4 @@ services:
       - .env
     volumes:
     - ./module/ndms:/module/ndms
-    command: nodemon ndms.js
+    command: ls

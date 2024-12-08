@@ -8,4 +8,4 @@ RUN npm install
 RUN npm install -g pm2
 RUN npm install -g nodemon
 EXPOSE 2310
-CMD ["nodemon", "ndms.js"]
+CMD ["ls"]
