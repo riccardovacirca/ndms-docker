@@ -9,4 +9,4 @@ services:
       - .env
     volumes:
     - ./module/ndms:/service/module/ndms
-    command: ls
+    command: sh
