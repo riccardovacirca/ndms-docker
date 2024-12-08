@@ -8,5 +8,5 @@ services:
     env_file:
       - .env
     volumes:
-    - ./module/ndms:/module/ndms
+    - ./module/ndms:/service/module/ndms
     command: ls

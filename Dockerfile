@@ -1,6 +1,6 @@
 FROM node:20-alpine
 RUN apk add --no-cache sqlite sqlite-dev git
-WORKDIR /ndms
+WORKDIR /service
 COPY package.json .
 COPY ndms.js .
 COPY .env .
