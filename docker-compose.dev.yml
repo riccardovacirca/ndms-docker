@@ -1,0 +1,12 @@
+services:
+  app:
+    build: .
+    ports:
+      - "2310:2310"
+    environment:
+      - NODE_ENV=development
+    env_file:
+      - .env
+    volumes:
+    - ./module/ndms:/module/ndms
+    command: nodemon ndms.js
