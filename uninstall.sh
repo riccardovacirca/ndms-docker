@@ -1,3 +1,3 @@
 #!/bin/sh
-npm unlink ndms-module
-cd module/ndms && npm unlink
+docker stop ndms && docker rm ndms && docker rmi ndms-image
+rm -rf ../ndms-docker
