@@ -1,6 +1,5 @@
 #!/bin/sh
-git clone https://github.com/riccardovacirca/ndms-module.git module/ndms
-cd module/ndms && npm link
-rm -rf module/.gitkeep
-cd ../.. && npm link ndms-module
-nodemon ndms.js
+mkdir -p modules
+git clone https://github.com/riccardovacirca/ndms-module.git modules/ndms
+cd modules/ndms && npm link
+cd /service && npm link ndms-module
