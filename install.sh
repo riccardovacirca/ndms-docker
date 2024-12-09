@@ -1,2 +1,3 @@
 #!/bin/sh
-docker-compose -f docker-compose.dev.yml up --build -d
+docker build -t my-node-app .
+docker run -p 2310:2310 my-node-app

@@ -5,7 +5,6 @@ COPY package.json .
 COPY ndms.js .
 COPY .env .
 RUN npm install
-RUN npm install -g pm2
 RUN npm install -g nodemon
 EXPOSE 2310
-CMD ["sh"]
+CMD ["nodemon", "main.js"]
